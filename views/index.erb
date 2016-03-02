@@ -1,0 +1,21 @@
+<h1> Here's Your Orders </h1>
+
+<% @shoes.each do |shoe| %>
+
+<h2>Name:</h2>
+<%= shoe.name %>
+
+<h2>Address:</h2>
+<%= shoe.address %>
+
+<h2>Order</h2>
+Ordered <%= shoe.quantity %> pair(s) in size <%= shoe.size %>
+
+
+<hr>
+
+
+
+
+
+<% end %>
